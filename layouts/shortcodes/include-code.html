@@ -1,0 +1,3 @@
+{{ $file := .Get "file" }}
+{{ $lang := .Get "lang" }}
+{{ highlight ($file | readFile) $lang "" }}
