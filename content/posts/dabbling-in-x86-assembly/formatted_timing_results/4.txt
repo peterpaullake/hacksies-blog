@@ -1,0 +1,15 @@
+C (GCC with -O2):
+Total cycles: 4,664,343,418
+Cycles per call: 463,120 +/- 50
+
+ASM1 (first attempt):
+Total cycles: 5,836,401,446
+Cycles per call: 579,000 +/- 5,000
+
+ASM2 (using expressions):
+Total cycles: 5,838,649,440
+Cycles per call: 579,000 +/- 4,000
+
+ASM3 (using expressions, using only one floating point register):
+Total cycles: 4,659,686,450
+Cycles per call: 463,130 +/- 50

@@ -1,0 +1,7 @@
+C (GCC with -O2):
+Total cycles: 4,664,343,418
+Cycles per call: 463,120 +/- 50
+
+ASM1 (first attempt):
+Total cycles: 5,836,401,446
+Cycles per call: 579,000 +/- 5,000
