@@ -2,3 +2,8 @@ baseURL = 'https://hacksies.com/'
 languageCode = 'en-us'
 title = 'Hacksies'
 theme = 'paper'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+ignoreFiles = ["figures/"]
