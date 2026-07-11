@@ -1,6 +1,6 @@
 +++
 date = '2026-03-29'
-draft = false
+draft = true
 title = 'Dabbling in x86 assembly'
 math = true
 +++
