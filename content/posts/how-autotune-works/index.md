@@ -1,6 +1,6 @@
 +++
 date = '2026-07-10'
-draft = true
+draft = false
 # title = 'Visualizing autocorrelations of streaming audio'
 title = 'How AutoTune works'
 math = true
