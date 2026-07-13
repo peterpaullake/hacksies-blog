@@ -156,16 +156,16 @@ function updateWaterfall(
             const value = result.scores[scoreId];
             const minValue = 0.0;
             const maxValue = 2.0;
-            let normalized_value = (value - minValue) / (maxValue - minValue);
-            if (normalized_value < 0.0) {
-                normalized_value = 0.0;
+            let normalizedValue = (value - minValue) / (maxValue - minValue);
+            if (normalizedValue < 0.0) {
+                normalizedValue = 0.0;
             }
-            if (normalized_value > 1.0) {
-                normalized_value = 1.0;
+            if (normalizedValue > 1.0) {
+                normalizedValue = 1.0;
             }
-            imageData.data[index + 0] = Math.floor(lerp(normalized_value, 255, 0));
+            imageData.data[index + 0] = Math.floor(lerp(normalizedValue, 255, 0));
             imageData.data[index + 1] = 0;
-            imageData.data[index + 2] = Math.floor(lerp(normalized_value, 0, 128));
+            imageData.data[index + 2] = Math.floor(lerp(normalizedValue, 0, 128));
             imageData.data[index + 3] = 255;
         }
     }

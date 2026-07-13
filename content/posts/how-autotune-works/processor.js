@@ -101,12 +101,12 @@ class AutoTuneProcessor extends AudioWorkletProcessor {
 
                     this.wasmInstance.exports.init_autotune(
                         this.autotuneStatePointer,
+                        this.nSamples,
+                        this.downsampleFactor,
                         this.detectionLagsPointer,
                         this.detectionLags.length,
                         this.trackingLagsPointer,
-                        this.trackingLags.length,
-                        this.nSamples,
-                        this.downsampleFactor,
+                        this.trackingLags.length
                     )
                 });
             }
@@ -155,12 +155,12 @@ class AutoTuneProcessor extends AudioWorkletProcessor {
             this.wasmInstance.exports.free_autotune(this.autotuneStatePointer);
             this.wasmInstance.exports.init_autotune(
                 this.autotuneStatePointer,
+                this.nSamples,
+                this.downsampleFactor,
                 this.detectionLagsPointer,
                 this.detectionLags.length,
                 this.trackingLagsPointer,
-                this.trackingLags.length,
-                this.nSamples,
-                this.downsampleFactor,
+                this.trackingLags.length
             )
         }
 
